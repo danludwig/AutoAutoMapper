@@ -38,7 +38,7 @@ Packages/
 *.nupkg
 
 #Allow released nupkg files
-!AutoAutoMapper.0.1.nupkg
+!NuGetPushes/AutoAutoMapper*.nupkg
 
 #Ignore local testsettings
 Local.testsettings
