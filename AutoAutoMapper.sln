@@ -20,6 +20,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGetPushes", "NuGetPushes", "{7781BF76-E737-4EE3-8E88-CA725969F76A}"
 	ProjectSection(SolutionItems) = preProject
 		NuGetPushes\AutoAutoMapper.0.1.0.0.nupkg = NuGetPushes\AutoAutoMapper.0.1.0.0.nupkg
+		NuGetPushes\AutoAutoMapper.0.2.0.0.nupkg = NuGetPushes\AutoAutoMapper.0.2.0.0.nupkg
 	EndProjectSection
 EndProject
 Global

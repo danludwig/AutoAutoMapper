@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Start\AutoMapperConfig.cs" />
-    <Compile Include="AutoMapperAutoProfiler.cs" />
+    <Compile Include="AutoProfiler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

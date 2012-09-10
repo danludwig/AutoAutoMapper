@@ -17,15 +17,15 @@ namespace MyAppNamespace
             // only your web project will be scanned for AutoMapper.Profile implementations.
             // If you define AutoMapper.Profile classes in any other assemblies, see
             // below for instructions on how to tell AutoAutoMapper to scan those assemblies.
-            AutoMapperAutoProfiler.RegisterProfiles();
+            AutoProfiler.RegisterProfiles();
 
             // If your AutoMapper Profile classes are defined in a different assembly,
             // you can register them by passing an assembly argument:
-            //AutoMapperAutoProfiler.RegisterProfiles(Assembly.GetAssembly(typeof(SomeAutoMapperProfileClass)));
+            //AutoProfiler.RegisterProfiles(Assembly.GetAssembly(typeof(SomeAutoMapperProfileClass)));
 
             // If you have AutoMapper Profile classes defined in multiple assemblies,
             // you can pass multiple assembly arguments:
-            // AutoMapperAutoProfiler.RegisterProfiles(Assembly.GetAssembly(typeof(SomeAutoMapperProfileClass)),
+            // AutoProfiler.RegisterProfiles(Assembly.GetAssembly(typeof(SomeAutoMapperProfileClass)),
             //    Assembly.GetAssembly(typeof(SomeAutoMapperProfileClassInADifferentAssembly)));
 
             // Additionally, there is a RegisterProfiles overload that takes an
@@ -35,7 +35,7 @@ namespace MyAppNamespace
             //         Assembly.GetAssembly(typeof(SomeAutoMapperProfileClass)),
             //         Assembly.GetAssembly(typeof(SomeAutoMapperProfileClassInADifferentAssembly)),
             //     };
-            // AutoMapperAutoProfiler.RegisterProfiles(assemblies);
+            // AutoProfiler.RegisterProfiles(assemblies);
         }
     }
 }

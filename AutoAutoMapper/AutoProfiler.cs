@@ -10,7 +10,7 @@ namespace AutoAutoMapper
     /// Helper class for scanning assemblies and automatically adding AutoMapper.Profile
     /// implementations to the AutoMapper Configuration.
     /// </summary>
-    public static class AutoMapperAutoProfiler
+    public static class AutoProfiler
     {
         /// <summary>
         /// Scans all types in each Assembly argument for AutoMapper Profile classes
