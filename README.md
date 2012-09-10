@@ -84,6 +84,8 @@ By default when you install the [AutoAutoMapper nuget package](http://nuget.org/
 
 You can then dive into the `AutoMapperConfig` class and tell it where to look for your `AutoMapper.Profile` implementations:
 
+    using AutoAutoMapper;
+
     public static class AutoMapperConfig
     {
         public static void RegisterProfiles()
