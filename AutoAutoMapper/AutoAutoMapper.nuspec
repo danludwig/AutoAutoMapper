@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+    <metadata>
+        <id>AutoAutoMapper</id>
+        <version>$version$</version>
+        <title>AutoAutoMapper</title>
+        <authors>Dan Ludwig</authors>
+        <owners>The UCosmic Consortium</owners>
+        <licenseUrl>http://opensource.org/licenses/MS-PL</licenseUrl>
+        <projectUrl>https://github.com/danludwig/AutoAutoMapper</projectUrl>
+        <iconUrl>http://www.gravatar.com/avatar/2b36e5d2ac5fe3c2377466dd98c62d52.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
+            AutoAutoMapper will automatically register all of your AutoMapper Profile classes
+        </description>
+        <releaseNotes>This is the first release of this package.</releaseNotes>
+        <copyright>Copyright 2012</copyright>
+        <tags>AutoMapper AutoAutoMapper Profile</tags>
+    </metadata>
+</package>
