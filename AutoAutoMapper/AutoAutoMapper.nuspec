@@ -16,6 +16,9 @@
         <releaseNotes>This is the first release of this package.</releaseNotes>
         <copyright>Copyright 2012</copyright>
         <tags>AutoMapper AutoAutoMapper Profile</tags>
+        <dependencies>
+            <dependency id="AutoMapper" version="2.0.0" />
+        </dependencies>
     </metadata>
     <files>
         <file src="App_Start\*.*" target="App_Start\" />

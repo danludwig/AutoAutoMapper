@@ -1,0 +1,21 @@
+To package this assembly:
+
+1.) Build the project in release mode.
+
+2.) Open Package Manager Console
+
+3.) Go to the AutoAutoMapper csproj directory (by default you are 1 level up in the solution directory).
+    cd .\AutoAutoMapper
+
+4.) Run nuget.exe pack on the csproj
+    ..\.nuget\NuGet.exe pack .\AutoAutoMapper.csproj -Prop Configuration=Release
+
+5.) If applicable, move the created nupkg file to the releases directory.
+
+6.) If applicable, update the .gitignore to include the nupkg in source control.
+
+7.) Push the package to nuget
+    ..\.nuget\NuGet.exe push ..\Releases\AutoAutoMapper.[versioninfo].nupkg
+
+8.) Check into git and push to remote.
+

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoAutoMapper", "AutoAutoMapper\AutoAutoMapper.csproj", "{4AD032FD-AB52-4947-A798-B24DA6BE361E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8205B1C8-DD54-4A87-969B-265D48AF9E12}"
@@ -13,6 +13,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E4199443-510F-4004-AB1F-717C36B5CBDE}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		NuGet.txt = NuGet.txt
 		README.md = README.md
 	EndProjectSection
 EndProject

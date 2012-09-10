@@ -38,7 +38,7 @@ Packages/
 *.nupkg
 
 #Allow released nupkg files
-!MyProjectName.1.0.nupkg
+!AutoAutoMapper.0.1.nupkg
 
 #Ignore local testsettings
 Local.testsettings
