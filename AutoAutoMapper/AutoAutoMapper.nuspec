@@ -17,4 +17,7 @@
         <copyright>Copyright 2012</copyright>
         <tags>AutoMapper AutoAutoMapper Profile</tags>
     </metadata>
+    <files>
+        <file src="App_Start\*.*" target="App_Start\" />
+    </files>
 </package>
