@@ -35,7 +35,7 @@ To get rid of the headache, install the [AutoAutoMapper nuget package](http://nu
 
     AutoAutoMapper.AutoProfiler.RegisterProfiles();
 
-By default, this will scan the assembly where it is called from. For small projects with only one assembly, this is all you need. However if you have `AutoMapper.Profile` classes defined in a different assembly, or spread across multiple assemblies, you can use the `RegisterProfiles()` overloads that take `Assembly` arguments. One overlaod allows you to pass each assembly as a separate argument:
+By default, this will scan the assembly where it is called from. For small projects with only one assembly, this is all you need. However if you have `AutoMapper.Profile` classes defined in a different assembly, or spread across multiple assemblies, you can use the `RegisterProfiles()` overloads that take `Assembly` arguments. One overload allows you to pass each assembly as a separate argument:
 
     AutoAutoMapper.AutoProfiler.RegisterProfiles(
         Assembly.GetAssembly(typeof(SomeProfileClassInAssemblyA)),
