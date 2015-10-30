@@ -35,8 +35,16 @@ namespace AutoAutoMapper
         /// </param>
         public static void RegisterProfiles(IEnumerable<Assembly> assemblies)
         {
+            // store service constructor if any
+            var serviceCtor = ((ConfigurationStore)Mapper.Configuration).ServiceCtor;
             Mapper.Initialize(configuration =>
                 GetConfiguration(Mapper.Configuration, EnsureAssembly(assemblies, Assembly.GetCallingAssembly())));
+
+            // restore service constructor if any
+            if (serviceCtor.Target != null)
+            {
+                Mapper.Configuration.ConstructServicesUsing(serviceCtor);
+            }
         }
 
         /// <summary>
