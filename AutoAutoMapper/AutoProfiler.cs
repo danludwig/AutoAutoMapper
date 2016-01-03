@@ -96,12 +96,19 @@ namespace AutoAutoMapper
 
         private static IEnumerable<Type> GetProfileClassesFrom(Assembly assembly)
         {
-            return assembly.GetTypes()
-                .Where(t =>
-                    t != typeof (Profile)
-                    && typeof (Profile).IsAssignableFrom(t)
-                    && !t.IsAbstract
-                );
+            try
+            {
+                return assembly.GetTypes()
+                    .Where(t =>
+                        t != typeof (Profile)
+                        && typeof (Profile).IsAssignableFrom(t)
+                        && !t.IsAbstract
+                    );
+            }
+            catch
+            {
+                return new Type[] {};
+            }
         }
     }
 }
