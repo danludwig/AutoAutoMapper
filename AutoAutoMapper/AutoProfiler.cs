@@ -90,19 +90,24 @@ namespace AutoAutoMapper
         private static void GetConfiguration(IConfiguration configuration, IEnumerable<Assembly> assemblies)
         {
             foreach (var assembly in assemblies)
-            {
-                var profileClasses = assembly.GetTypes()
-                    .Where(t =>
-                        t != typeof(Profile)
-                        && typeof(Profile).IsAssignableFrom(t)
-                        && !t.IsAbstract
-                    )
-                    .ToArray()
-                ;
-                foreach (var profileClass in profileClasses)
-                {
+                foreach (var profileClass in GetProfileClassesFrom(assembly))
                     configuration.AddProfile((Profile)Activator.CreateInstance(profileClass));
-                }
+        }
+
+        private static IEnumerable<Type> GetProfileClassesFrom(Assembly assembly)
+        {
+            try
+            {
+                return assembly.GetTypes()
+                    .Where(t =>
+                        t != typeof (Profile)
+                        && typeof (Profile).IsAssignableFrom(t)
+                        && !t.IsAbstract
+                    );
+            }
+            catch
+            {
+                return new Type[] {};
             }
         }
     }
